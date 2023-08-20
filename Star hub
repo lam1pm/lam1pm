@@ -1,0 +1,113 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local MainStar = Instance.new("Frame")
+local star = Instance.new("TextLabel")
+local main = Instance.new("TextButton")
+local miss = Instance.new("TextButton")
+local TextButton = Instance.new("TextButton")
+local openmain = Instance.new("Frame")
+local open = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.coregui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MainStar.Name = "Main Star"
+MainStar.Parent = ScreenGui
+MainStar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainStar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainStar.BorderSizePixel = 0
+MainStar.Position = UDim2.new(0.0870044082, 0, 0.0421686731, 0)
+MainStar.Size = UDim2.new(0, 733, 0, 457)
+MainStar.Active = true
+MainStar.Visible = true
+MainStar.Draggable = true
+
+star.Name = "star"
+star.Parent = MainStar
+star.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
+star.BorderColor3 = Color3.fromRGB(0, 0, 0)
+star.BorderSizePixel = 0
+star.Size = UDim2.new(0, 733, 0, 66)
+star.Font = Enum.Font.SourceSans
+star.Text = "Star Hub"
+star.TextColor3 = Color3.fromRGB(0, 0, 0)
+star.TextSize = 45.000
+
+main.Name = "main"
+main.Parent = MainStar
+main.BackgroundColor3 = Color3.fromRGB(162, 162, 162)
+main.BorderColor3 = Color3.fromRGB(0, 0, 0)
+main.BorderSizePixel = 0
+main.Position = UDim2.new(0, 0, 0.144420132, 0)
+main.Size = UDim2.new(0, 58, 0, 50)
+main.Font = Enum.Font.SourceSans
+main.Text = "Main"
+main.TextColor3 = Color3.fromRGB(0, 0, 0)
+main.TextSize = 21.000
+main.MouseButton1Down:Connect(function()
+	https://github.com/lam1pm/lam1pm.git
+end)
+
+miss.Name = "miss"
+miss.Parent = MainStar
+miss.BackgroundColor3 = Color3.fromRGB(162, 162, 162)
+miss.BorderColor3 = Color3.fromRGB(0, 0, 0)
+miss.BorderSizePixel = 0
+miss.Position = UDim2.new(0, 0, 0.25382933, 0)
+miss.Size = UDim2.new(0, 58, 0, 50)
+miss.Font = Enum.Font.SourceSans
+miss.Text = "Miss"
+miss.TextColor3 = Color3.fromRGB(0, 0, 0)
+miss.TextSize = 21.000
+miss.MouseButton1Down:Connect(function()
+	print("ESP ON")
+end)
+
+TextButton.Name = "-"
+TextButton.Parent = MainStar
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.933151424, 0, 0, 0)
+TextButton.Size = UDim2.new(0, 49, 0, 37)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "-"
+TextButton.TextColor3 = Color3.fromRGB(120, 120, 120)
+TextButton.TextSize = 100.000
+TextButton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.MouseButton1Down:Connect(function()
+	MainStar.Visible = false
+	openmain.Visible = true
+end)
+
+openmain.Name = "open main"
+openmain.Parent = ScreenGui
+openmain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+openmain.BorderColor3 = Color3.fromRGB(0, 0, 0)
+openmain.BorderSizePixel = 0
+openmain.Position = UDim2.new(0.150881052, 0, 0.1746988, 0)
+openmain.Size = UDim2.new(0, 189, 0, 81)
+openmain.Active = true
+onpenmain..Draggable = true
+
+open.Name = "open"
+open.Parent = ScreenGui
+open.BackgroundColor3 = Color3.fromRGB(85, 255, 0)
+open.BorderColor3 = Color3.fromRGB(0, 0, 0)
+open.BorderSizePixel = 0
+open.Position = UDim2.new(0.150881052, 0, 0.1746988, 0)
+open.Size = UDim2.new(0, 189, 0, 81)
+open.Font = Enum.Font.SourceSans
+open.Text = "Open Star Hub"
+open.TextColor3 = Color3.fromRGB(0, 0, 0)
+open.TextSize = 33.000
+open.MouseButton1Down:Connect(function()
+	MainStar.Visible = true
+	openmain.Visible = false
+end)
