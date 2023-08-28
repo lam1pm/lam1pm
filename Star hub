@@ -1,8 +1,5 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
+loacal Star hub =  loadstring(game:HttpGet('https://raw.githubusercontent.com/lam1pm/Starhub/main/onefruitsimulator.lua"))()
+getgenv().
 local ScreenGui = Instance.new("ScreenGui")
 local MainStar = Instance.new("Frame")
 local star = Instance.new("TextLabel")
